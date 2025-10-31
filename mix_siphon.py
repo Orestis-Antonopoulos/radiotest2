@@ -15,12 +15,10 @@ from datetime import timedelta
 from typing import Optional, Dict, Any, List
 
 DEF_SEEDS = [
-    "top 2025 songs",
-    "best songs 2025",
-    "2025 hits",
-    "top 2025 pop",
-    "top 2025 rap",
-    "charts 2025",
+    "top 2020 pop",
+    "2020s pop",
+    "2000 pop songs",
+    "top 2010 pop",
 ]
 
 def run(cmd: str) -> subprocess.CompletedProcess:

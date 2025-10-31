@@ -160,7 +160,7 @@ def main():
     ap.add_argument("--urls", default="urls.txt", help="Input list of YouTube URLs (one per line)")
     ap.add_argument("--cache-dir", default="cache", help="Folder for downloaded tracks (rolling)")
     ap.add_argument("--jingles-dir", default="jingles_mp3", help="Folder with jingle files")
-    ap.add_argument("--jingle-period", type=int, default=2, help="Play one random jingle every N songs (0=off)")
+    ap.add_argument("--jingle-period", type=int, default=5, help="Play one random jingle every N songs (0=off)")
     ap.add_argument("--ytdlp", default=YTDLP_DEFAULT, help="Path to yt-dlp")
     ap.add_argument("--mpv", default=MPV_DEFAULT, help="Path to mpv")
     ap.add_argument("--shuffle", action="store_true", help="Shuffle the URL list once at start")
