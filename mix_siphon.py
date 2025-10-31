@@ -111,9 +111,10 @@ def main():
     if args.ytdlp_args:
         ytdlp_extra = f"{ytdlp_extra} {args.ytdlp_args}".strip()
 
-    # Default probe uses iOS client to dodge SABR/PO-token drama; user can override by passing args.
-    default_probe = "--extractor-args 'youtube:player_client=ios' --force-ipv4 --concurrent-fragments 1 --http-chunk-size 10M"
+    # Good: plain web client, no tokens needed
+    default_probe = "--extractor-args youtube:player_client=web --force-ipv4 --concurrent-fragments 1 --http-chunk-size 10M"
     probe_args = f"{ytdlp_extra} {default_probe}".strip()
+
 
     seeds: List[str] = []
     if args.seeds:
